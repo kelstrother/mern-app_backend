@@ -1,4 +1,5 @@
 // const cors require('cors')
+const port = process.env.PORT || 4000
 const express = require('express')
 const app = express()
 const logger = require('morgan')
@@ -16,4 +17,4 @@ app.get('/', (req, res) => {
 // app.use(express.json())
 
 
-app.listen(4000, () => console.log('Server running on port 4000!'))
+app.listen(port, () => console.log(`Server running on port ${port}`))
