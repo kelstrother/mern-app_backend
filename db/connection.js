@@ -3,7 +3,8 @@ require("dotenv").config()
 const { MONGODBURI } = process.env;
 const mongoose = require('mongoose')
 const config = { useUnifiedTopology: true, useNewUrlParser: true }
-const db = mongoose.connection
+const DB = mongoose.connection
+
 mongoose.connect(MONGODBURI, config)
 
 DB.on("open", () => console.log("You are connected to Mongo"))
