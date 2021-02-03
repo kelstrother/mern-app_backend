@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 })
 
 // CREATE ROUTE
-router.post('/player', async (req, res) => {
+router.post('/', async (req, res) => {
    res.json(await Player.create(req.body))
 })
 

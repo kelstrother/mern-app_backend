@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
 })
 
 //CREATE ROUTE
-router.post('/guitar', async (req, res) => {
+router.post('/', async (req, res) => {
    res.json(await Guitar.create(req.body))
 })
 
