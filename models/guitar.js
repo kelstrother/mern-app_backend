@@ -6,7 +6,6 @@ const guitarSchema = new Schema(
       model: String,
       img: String,
    },
-   // { timestamps: true }
 )
 
 const Guitar = model("guitar", guitarSchema)

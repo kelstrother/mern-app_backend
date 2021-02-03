@@ -13,8 +13,8 @@ app.use(cors())
 app.use(logger('dev'))
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
-// app.use('/guitar/', guitarRouter)
-// app.use('/player/', playerRouter)
+app.use('/guitar', guitarRouter)
+app.use('/player', playerRouter)
 
 app.get('/', (req, res) => {
    res.json({
@@ -26,4 +26,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(port, () => console.log(`Server running on port ${PORT}`))
+app.listen(port, () => console.log(`Server running on port ${port}`))
