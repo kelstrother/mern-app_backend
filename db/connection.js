@@ -1,6 +1,7 @@
 
 require("dotenv").config()
 const { MONGODBURI } = process.env;
+// const mongoURI = 'mongodb://localhost:27017/' + 'guitars'
 const mongoose = require('mongoose')
 const config = { useUnifiedTopology: true, useNewUrlParser: true }
 const DB = mongoose.connection
